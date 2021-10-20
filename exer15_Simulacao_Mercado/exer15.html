@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+
+<body>
+
+    <script>
+        let continua = ''
+        let produtos = ''
+        let venda = 0
+        let total = 0
+        let valorPago = 0
+        let troco = 0
+
+        do {
+
+            produtos = prompt('Digite o produto')
+            venda = Number(prompt('Digite o valor do produto'))
+            continua = prompt('Deseja continuar? s/n').toUpperCase
+
+            total += venda
+
+        } while (continua == 's')
+        alert(`Total: R$ ${total}`)
+        valorPago = Number(prompt('Qual valor pago?'))
+
+        troco = valorPago - total
+
+       
+        alert(`Valor Pago: R$ ${valorPago}`)
+        alert(`Troco: R$ ${troco.toFixed(2)}`)
+       /*  console.log('Total: ' + total)
+         console.log('Valor Pago ' + valorPago)
+         console.log('Troco: ' + troco) */
+
+    </script>
+
+</body>
+
+</html>

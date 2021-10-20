@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+</head>
+
+<body>
+
+    <script>
+        let eleitores  = 0
+        let numBranco  = 0
+        let numNulos   = 0
+        let numValidos = 0
+
+        let percBranco  = 0
+        let percNulos   = 0
+        let percValidos = 0
+
+
+        eleitores = Number(prompt('Digite o total de eleitores'))
+        numBranco = Number(prompt('Digite o total de votos em branco'))
+        numNulos = Number(prompt('Digite o total de votos nulos'))
+        numValidos = Number(prompt('Digite o total de votos válidos'))
+
+        percBranco  = numBranco / eleitores * 100 * numBranco
+        percNulos   = numNulos / eleitores * 100 
+        percValidos = numValidos / eleitores * 100
+
+        document.write('Total de eleitores ' + eleitores + ' <br>')
+        document.write('Total de votos em branco' + percBranco +' %' + ' <br>')
+        document.write('Total de votos nulos ' + percNulos + '% ' + percNulos + ' <br>')
+        document.write('Total de votos válidos ' + percNulos + ' % ' + percValidos + ' <br>')
+    </script>
+
+</body>
+
+</html>

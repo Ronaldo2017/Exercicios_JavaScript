@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 02</title>
+</head>
+
+<body>
+
+    <script>
+       let x = []
+       let m = []
+       let num = 0
+
+       for(let i = 0; i < 5; i++){
+           x[i] = Number(prompt('Digite um valor para o array X'))
+       }
+       num = Number(prompt('Digite outro valor'))
+       for(let i = 0; i < 5; i++){
+           m[i] = x[i] * num
+       }
+
+       for(let i = 0; i < 5; i++){
+           document.write('Valores passados para o array M: ' + m[i] + '<br>')
+       }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

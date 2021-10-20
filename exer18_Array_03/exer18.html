@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 03</title>
+</head>
+
+<body>
+
+    <script>
+        let temp = []
+        let media = 0
+        let soma = 0
+        let menor = 0
+        let maior = 0
+
+        for (let i = 0; i < 7; i++) {
+            temp[i] = Number(prompt('Digite a temperatura'))
+            soma += temp[i]
+
+            if(temp[i] > maior){
+                maior = temp[i]
+            }
+        }
+        media = soma / 7
+        menor = maior
+
+        for(let i = 0; i < 7; i++){
+            if(temp[i] < menor){
+                menor = temp[i]
+            }
+        }        
+
+        console.log('Menor valor: ' + menor)
+
+        console.log('Maior valor: ' + maior)
+
+        console.log('A média de temperatura é: ' + media)
+
+
+    </script>
+
+</body>
+
+</html>

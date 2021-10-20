@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço Novo</title>
+</head>
+
+<body>
+
+    <script>
+        let novoValor   = 0
+        let nome        = prompt('Digite o nome do cliente')
+        let valorCompra = Number(prompt('Digite o valor da compra'))
+
+        if (valorCompra <= 200) {
+            novoValor = valorCompra - (valorCompra * 0.10)
+        } else if((valorCompra > 200) && (valorCompra <= 500)) {
+            novoValor = valorCompra - (valorCompra * 0.15)
+        }else{
+            novoValor = valorCompra - (valorCompra * 0.20)
+        }
+
+        document.write('Cliente: ' + nome + '<br>')
+        document.write('Valor de compra: ' + valorCompra + '<br>')
+        document.write('Total a pagar: ' + novoValor + '<br>')
+
+    </script>
+
+</body>
+
+</html>

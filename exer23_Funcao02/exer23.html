@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 01</title>
+</head>
+
+<body>
+
+    <script>
+
+        function nascimento(atual, nasc){
+
+            let idade = atual - nasc
+            return idade
+        }
+
+        let x = Number(prompt('Digite o ano atual'))
+        let y = Number(prompt('Digite o seu ano de nascimento'))
+
+        alert('Você tem ' + nascimento(x, y) + ' anos.')
+     
+    </script>
+
+</body>
+
+</html>

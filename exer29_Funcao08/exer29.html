@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 07</title>
+</head>
+
+<body>
+
+    <script>
+        function conta(saldo, cheque) {
+            let saldoConta = saldo
+            if (saldo > cheque) {
+                saldoConta = saldo - cheque
+                alert('Cheque pode ser descontado - Saldo atual: ' + saldoConta)
+            } else {
+                alert('Saldo insuficiente para descontar o cheque - Saldo atual: ' + saldoConta)
+            }
+        }
+
+        let saldoInicial = Number(prompt('Informe o saldo da conta'))
+        let cheque = Number(prompt('Informe o valor do cheque'))
+
+        conta(saldoInicial, cheque)
+
+        function verificaCheque(saldo, cheque){
+            let saldoAtual = saldo
+            if(saldo > cheque){
+                saldoAtual = saldo - cheque
+                alert('Saldo atual: ' + saldoAtual)
+            }else{
+                alert('Saldo insuficiente - Saldo Atual: ' + saldoAtual)
+            }
+        }
+
+        let valor = Number(prompt('Digite o valor do saldo'))
+        let valorCheque = Number(prompt('Digite o valor do cheque'))
+
+        verificaCheque(valor, valorCheque)
+    </script>
+
+</body>
+
+</html>

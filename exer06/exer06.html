@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço Novo</title>
+</head>
+
+<body>
+
+    <script>
+        /*let preco     = 0
+        let novoPreco = 0
+
+        preco = Number(prompt('Digite o preço do produto'))
+
+        novoPreco = preco - (preco / 100 * 15)
+        alert('Preço com desconto ' + novoPreco)
+        
+        if (novoPreco > 500) {
+            alert('Caro')
+        } else {
+            alert('Barato')
+        }*/
+
+        let valorProduto = 0
+        let valorAtual   = 0
+        let desconto     = 0
+        valorProduto = Number(prompt('Digite o valor do produto'))
+        desconto = (valorProduto / 100) * 15
+        valorAtual = valorProduto - desconto
+
+        alert('Preço com desconto ' + valorAtual)
+
+        if(valorAtual > 500){
+            alert('Caro')
+        }else{
+            alert('Barato')
+        }
+    </script>
+
+</body>
+
+</html>

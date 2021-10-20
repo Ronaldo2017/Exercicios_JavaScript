@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto 02</title>
+</head>
+
+<body>
+
+    <script>
+        let carro1 = {
+            marca: 'GM',
+            modelo: 'Celta',
+            preco: 22.500
+        }
+
+        let carro2 = {
+            marca: 'VW',
+            modelo: 'Gol',
+            preco: 21.500
+        }
+
+        let carro3 = {
+            marca: 'FIAT',
+            modelo: 'Palio',
+            preco: 18.500
+        }
+
+        let carro4 = {
+            marca: 'RENAULT',
+            modelo: 'Clio',
+            preco: 25.500
+        }
+
+        let loja = []
+        let maior = 0
+        let posicao = 0
+
+
+        loja.push(carro1)
+        loja.push(carro2)
+        loja.push(carro3)
+        loja.push(carro4)
+
+        for(let i = 0; i < 4; i++){
+            if(loja[i] > maior){
+                maior = loja[i].preco
+                posicao = i
+            }
+        }
+
+        alert("O carro mais caro da loja Marca:  " + loja[posicao].marca + " Modelo: " + loja[posicao].modelo + " Preço: " + loja[posicao].preco)
+
+        
+
+    </script>
+
+</body>
+
+</html>

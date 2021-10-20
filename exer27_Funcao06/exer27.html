@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 06</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        function moeda(valor, moeda) {
+            let convertido = 0
+            if (moeda == 'd') {
+                convertido = valor / 5.50
+            } else if (moeda == 'e') {
+                convertido = valor / 7.00
+            }
+
+            return convertido
+
+        }
+
+        let real = Number(prompt('Digite o valor em real'))
+        let moedaTipo = prompt('Qual moeda que converter?')        
+
+        alert('O valor convertido é: ' + moeda(real, moedaTipo))
+    </script>
+
+</body>
+
+</html>

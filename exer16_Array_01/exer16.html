@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+
+    <script>
+        let nomes = []
+        let notas = []
+        let media = 0
+        let soma = 0
+
+        for(let i = 0; i < 5; i++){
+            nomes[i] = prompt('Digite o nome do aluno')
+            notas[i] = Number(prompt('Digite a nota do aluno'))
+            soma += notas[i]
+        }
+
+        media = soma / 5
+
+        for(let i = 0; i < 5; i++){
+            alert(`Aluno: ${nomes[i]} -- Nota: ${notas[i]}`)
+        }
+
+       alert(`Total: ${soma} -- Média: ${media}`)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
