@@ -8,7 +8,7 @@ class Alunos{
         this.media = 0
     }
 
-    nomes(){
+    dados(){
         this.nome = prompt('Digite seu nome')
         this.matricula = Number(prompt('Digite a matricula'))
         this.nota1 = Number(prompt('Digite a primeira nota'))
@@ -34,6 +34,6 @@ class Alunos{
 
 let aluno = new Alunos()
 
-aluno.nomes()
+aluno.dados()
 aluno.medias()
 aluno.resultado()
