@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(207, 193, 193, 0.219);
+}
+
+.caixa{
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px; 
+    width: 300px;
+    margin: auto;
+    margin-top: 150px;
+   
+}
+
+#submitbtn{display:none;}
