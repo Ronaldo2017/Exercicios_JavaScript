@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+.caixa{
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px; 
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(181, 241, 156);
+}
+
+.imc{
+    background-color: aquamarine;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.valor{
+    padding: 5px;
+    margin-right: 120px;
+}
+
+.radio{
+    margin-right: 100px;
+}
+
+#calc{
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+

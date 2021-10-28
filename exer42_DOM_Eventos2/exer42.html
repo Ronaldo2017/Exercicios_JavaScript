@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM E EVENTOS - 01</title>
+</head>
+
+<body>
+    <div class="caixa">
+        <header>
+            <div class="imc">
+                IMC = PESO/ALTURA X ALTURA
+            </div>
+        </header>
+        <div class="valor">Altura</div>
+        <input type="number" id="altura">
+
+        <div class="valor">Peso</div>
+        <input type="number" id="peso"><br><br>
+        <div class="radio">
+            <input type="radio" name="sexo" id="masc" checked>Maculino
+            <br>
+            <input type="radio" name="sexo" id="fem">Feminino<br><br>
+        </div>
+        <button id="calc" onclick="calcular()">Calcular</button><br><br>
+
+        <div>SEU IMC</div><br>
+        <input type="number" id="res" readonly>
+
+    </div>
+
+    <script src="dom_eventos.js" async></script>
+</body>
+
+</html>
